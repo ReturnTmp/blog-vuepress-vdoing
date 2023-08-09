@@ -43,7 +43,7 @@ actionText: 立刻进入 →
 
 ## :email: 联系
 
-- **Email**: <a href="returntmp@qq.com">returntmp@qq.com</a>
-- **GitHub**: <https://github.com/xugaoyi>
+- **Email**: <a href="mailto:returntmp@qq.com" target="_blank">returntmp@qq.com</a>
+- **GitHub**: <https://github.com/ReturnTmp>
 
 </br> 
