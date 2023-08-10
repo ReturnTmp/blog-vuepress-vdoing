@@ -31,21 +31,20 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: "首页", link: "/" },
       {
-        text: "前端",
-        link: "/frontend/", //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-        items: [
-          // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-        ],
-      },
-      {
-        text: "后端",
-        link: "/backend/",
+        text: "开发",
+        link: "/dev/",
         items: [
           {
             text: "前端",
-            link: "/frontend/", //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+            link: "/frontend/",
+            items: [{ text: "示例", link: "/pages/9b0072/" }],
+          },
+          {
+            text: "后端",
+            link: "/backend/",
             items: [
-              // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
+              { text: "示例1", link: "/pages/c52c56/" },
+              { text: "示例2", link: "/pages/8d3d36/" },
             ],
           },
         ],
@@ -278,26 +277,25 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-    // [
-    //   'vuepress-plugin-comment', // 评论
-    //   {
-    //     choosen: 'gitalk',
-    //     options: {
-    //       clientID: 'a6e1355287947096b88b',
-    //       clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-    //       repo: 'blog-gitalk-comment', // GitHub 仓库
-    //       owner: 'xugaoyi', // GitHub仓库所有者
-    //       admin: ['xugaoyi'], // 对仓库有写权限的人
-    //       // distractionFreeMode: true,
-    //       pagerDirection: 'last', // 'first'正序 | 'last'倒序
-    //       id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-    //       title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-    //       labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-    //       body:
-    //         '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-    //     },
-    //   },
-    // ],
+    [
+      "vuepress-plugin-comment", // 评论
+      {
+        choosen: "gitalk",
+        options: {
+          clientID: "a96bb2b52754617ae966",
+          clientSecret: "ac6d4e74111384e81c9d60e5eac0c84bd17f5150",
+          repo: "blog-vuepress-vdoing-talk", // GitHub 仓库
+          owner: "ReturnTmp", // GitHub仓库所有者
+          admin: ["ReturnTmp"], // 对仓库有写权限的人
+          // distractionFreeMode: true,
+          pagerDirection: "last", // 'first'正序 | 'last'倒序
+          id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
+          title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
+          labels: ["Gitalk", "Comment"], // GitHub issue 的标签
+          body: "页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>", // GitHub issue 的内容
+        },
+      },
+    ],
     [
       "@vuepress/last-updated", // "上次更新"时间格式
       {
