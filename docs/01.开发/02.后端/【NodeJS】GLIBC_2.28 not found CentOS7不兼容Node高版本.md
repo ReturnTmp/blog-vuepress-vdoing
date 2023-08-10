@@ -1,0 +1,148 @@
+---
+title: 【NodeJS】GLIBC_2.28 not found CentOS7不兼容Node高版本
+date: 2023-08-10 17:37:18
+permalink: /pages/c52c56/
+categories:
+  - 开发
+  - 后端
+tags:
+  - Node
+author: 
+  name: ReturnTmp
+  link: https://github.com/ReturnTmp
+---
+
+
+
+## 前言
+
+CentOS 7环境下安装 Nvm，在执行`nvm use 18.17.0`后执行`node -v`爆出如下错误
+
+```bash
+node: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.25' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by node)
+node: /lib64/libstdc++.so.6: version `CXXABI_1.3.9' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by node)
+```
+
+其实这本质上并不是 Nvm 的问题，而是CentOS低版本系统的 GLIBC 版本过低，我们再查看 ldd 版本
+
+```bash
+# ldd --version
+ldd (GNU libc) 2.17
+Copyright (C) 2012 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Written by Roland McGrath and Ulrich Drepper.
+```
+
+我们发现系统中 GLIBC 版本仅为 17，而报错中显示我们缺失，25，27，28。而 GLIBC是向下兼容的，安装高版本的同时会安装低版本，所以我们只需要安装 GLIBC_2.28 即可
+
+> 注意：如果有条件的话可以直接升级系统 CentOS 8，可以有效解决问题
+
+
+
+## 解决方案
+
+### 更新 glibc
+
+```bash
+cd
+wget http://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.gz
+tar xf glibc-2.28.tar.gz 
+cd glibc-2.28/ && mkdir build  && cd build
+```
+
+
+
+### 升级 gcc、make
+
+```bash
+# 升级GCC(默认为4 升级为8)
+yum install -y centos-release-scl
+yum install -y devtoolset-8-gcc*
+mv /usr/bin/gcc /usr/bin/gcc-4.8.5
+ln -s /opt/rh/devtoolset-8/root/bin/gcc /usr/bin/gcc
+mv /usr/bin/g++ /usr/bin/g++-4.8.5
+ln -s /opt/rh/devtoolset-8/root/bin/g++ /usr/bin/g++
+
+# 升级 make(默认为3 升级为4)
+wget http://ftp.gnu.org/gnu/make/make-4.3.tar.gz
+tar -xzvf make-4.3.tar.gz && cd make-4.3/
+./configure  --prefix=/usr/local/make
+make && make install
+cd /usr/bin/ && mv make make.bak
+ln -sv /usr/local/make/bin/make /usr/bin/make
+```
+
+
+
+### 升级 libstdc++
+
+```bash
+cd ~/glibc-2.28/build
+
+make all
+yum whatprovides libstdc++.so.6
+yum update -y libstdc++.x86_64
+
+sudo wget http://www.vuln.cn/wp-content/uploads/2019/08/libstdc.so_.6.0.26.zip
+unzip libstdc.so_.6.0.26.zip
+cp libstdc++.so.6.0.26 /lib64/
+cd /lib64
+
+# 把原来的命令做备份
+cp libstdc++.so.6 libstdc++.so.6.bak
+rm -f libstdc++.so.6
+
+# 重新链接
+ln -s libstdc++.so.6.0.26 libstdc++.so.6
+```
+
+
+
+### 编译安装
+
+```bash
+cd ~/glibc-2.28/build
+# 配置环境
+../configure --prefix=/usr --disable-profile --enable-add-ons --with-headers=/usr/include --with-binutils=/usr/bin
+# 安装
+make
+make install
+```
+
+
+
+### 查看版本
+
+#### lld
+
+```bash
+(base) [root@VM-4-3-centos build]# ldd --version
+ldd (GNU libc) 2.28
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Written by Roland McGrath and Ulrich Drepper.
+```
+
+#### node
+
+```bash
+(base) [root@VM-4-3-centos build]# node -v
+v18.17.0
+```
+
+
+
+
+
+## 参考文章
+
+[OSError: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by xxx.so) ——升级GLIBC并解决系统错误 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/559791450)
+
+[解决nvm升级node v18.14.0时/lib64/libm.so.6: version 'GLIBC_2.27' not found (required by node)问题 - jiayou111 - 博客园 (cnblogs.com)](https://www.cnblogs.com/even160941/p/17319119.html)
+
