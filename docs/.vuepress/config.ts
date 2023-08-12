@@ -57,10 +57,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         text: "更多",
         link: "/more/",
-        items: [
-          { text: "项目", link: "/pages/3c5578/" },
-          { text: "友链", link: "/friends/" },
-        ],
+        items: [{ text: "友链", link: "/friends/" }],
       },
       { text: "关于", link: "/about/" },
       {
