@@ -20,7 +20,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       lang: "zh-CN",
       title: "ReturnTmp's Blog",
       description:
-        "Java全栈技术博客，专注于Java全栈开发学习与总结。分享Java,C/C++,Go,JavaScript,TypeScript,Spring,Vue等技术文章。",
+        "微软学生大使，阿里云专家博主。热爱生活，热爱当下，喜欢分享有趣好玩的计算机知识。",
     },
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -31,23 +31,28 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: "首页", link: "/" },
       {
-        text: "开发",
-        link: "/dev/",
-        items: [
-          {
-            text: "前端",
-            link: "/frontend/",
-            items: [{ text: "示例", link: "/pages/9b0072/" }],
-          },
-          {
-            text: "后端",
-            link: "/backend/",
-            items: [
-              { text: "示例1", link: "/pages/c52c56/" },
-              { text: "示例2", link: "/pages/8d3d36/" },
-            ],
-          },
-        ],
+        text: "基础课程",
+        link: "/course/",
+      },
+      {
+        text: "编程语言",
+        link: "/language/",
+      },
+      {
+        text: "框架技术",
+        link: "/tool/",
+      },
+      {
+        text: "运维笔记",
+        link: "/devops/",
+      },
+      {
+        text: "移动开发",
+        link: "/course/",
+      },
+      {
+        text: "随笔摘录",
+        link: "/essay/",
       },
       {
         text: "更多",
@@ -129,7 +134,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     blogger: {
       avatar: "/img/profile.png",
       name: "ReturnTmp",
-      slogan: "Java全栈开发",
+      slogan: "分享有趣好玩的计算机知识",
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
