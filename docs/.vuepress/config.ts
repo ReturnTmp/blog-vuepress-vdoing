@@ -50,7 +50,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: "移动开发",
-        link: "/course/",
+        link: "/mobile/",
       },
       {
         text: "随笔摘录",
