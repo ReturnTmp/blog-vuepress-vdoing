@@ -29,5 +29,8 @@
     "vuepress-plugin-zooming": "^1.1.7",
     "vuepress-theme-vdoing": "^1.12.9",
     "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "@mdit/plugin-katex": "^0.4.8"
   }
 }

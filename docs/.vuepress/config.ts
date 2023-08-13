@@ -8,6 +8,8 @@ import dayjs from "dayjs";
 import baiduCode from "./config/baiduCode"; // 百度统计hm码
 import htmlModules from "./config/htmlModules"; // 自定义插入的html块
 
+import { katex } from "@mdit/plugin-katex";
+
 const DOMAIN_NAME = "returntmp.cn"; // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}`; // 网址
 
@@ -183,6 +185,20 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     ["meta", { name: "baidu-site-verification", content: "7F55weZDDc" }], // 百度统计的站长验证（你可以去掉）
     ["meta", { name: "theme-color", content: "#11a8cd" }], // 移动浏览器主题颜色
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css",
+      },
+    ], // 让md支持数学公式
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js",
+      },
+    ], // 让md支持数学公式
     // [
     //   'script',
     //   {
@@ -311,6 +327,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   markdown: {
     lineNumbers: true,
     extractHeaders: ["h2", "h3", "h4", "h5", "h6"], // 提取标题到侧边栏的级别，默认['h2', 'h3']
+    // extendMarkdown(md) {
+    //   md.set({ html: true });
+    //   md.use(require("markdown-it-katex"));
+    // },
+    // extendMarkdown(md) {
+    //   md.use(require("markdown-it-mathjax3"));
+    //   md.linkify.set({ fuzzyEmail: false });
+    // },
+    extendMarkdown: (md) => {
+      md.use(katex);
+      md.linkify.set({ fuzzyEmail: false });
+    },
   },
 
   // 监听文件变化并重新构建
