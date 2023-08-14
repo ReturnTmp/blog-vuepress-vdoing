@@ -191,22 +191,21 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         rel: "stylesheet",
         href: "https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css",
       },
-    ], // 让md支持数学公式
+    ],
     [
       "link",
       {
         rel: "stylesheet",
         href: "https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js",
       },
-    ], // 让md支持数学公式
-    // [
-    //   'script',
-    //   {
-    //     'data-ad-client': 'ca-pub-7828333725993554',
-    //     async: 'async',
-    //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-    //   },
-    // ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/style.css",
+      },
+    ],
   ],
 
   // 插件配置
