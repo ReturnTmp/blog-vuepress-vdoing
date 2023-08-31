@@ -49,8 +49,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: "/devops/",
       },
       {
-        text: "移动开发",
-        link: "/mobile/",
+        text: "人工智能",
+        link: "/ai/",
       },
       {
         text: "随笔摘录",
