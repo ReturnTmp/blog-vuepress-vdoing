@@ -152,7 +152,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       ],
     },
-
     // 页脚信息
     footer: {
       createYear: 2023, // 博客创建年份
