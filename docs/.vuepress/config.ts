@@ -157,7 +157,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     footer: {
       createYear: 2023, // 博客创建年份
       copyrightInfo:
-        'ReturnTmp | <a href="https://github.com/ReturnTmp/blog-vuepress-vdoing/blob/main/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+        'ReturnTmp | <a href="https://github.com/ReturnTmp/blog-vuepress-vdoing/blob/main/LICENSE" target="_blank">MIT License</a></br>' +
+        '<a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2023032053号</a> | ' +
+        '<a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2023032053号-1</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
