@@ -1,13 +1,13 @@
 # npm
-package-lock.json
+# package-lock.json
 node_modules
 
 # yarn
-yarn.lock
+# yarn.lock
 yarn-error.log
 
 # pnpm
-pnpm-lock.yaml
+# pnpm-lock.yaml
 
 # vscode
 .vscode
