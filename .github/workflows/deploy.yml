@@ -1,39 +1,40 @@
-name: Build app and deploy
+name: Deploy My Server
+
 on:
-  #监听push操作
   push:
     branches:
-      # main分支，你也可以改成其他分支
       - main
+
 jobs:
-  build:
-    # runs-on 指定job任务运行所需要的虚拟机环境(必填字段)
-    runs-on: ubuntu-latest
-    steps:
-      # 获取源码
-      - name: Checkout
-        # 使用action库  actions/checkout获取源码
-        uses: actions/checkout@master
-      # 安装 Node
-      - name: use Node.js 18.17.0
-        # 使用action库  actions/setup-node安装node
+  deploy:
+    runs-on: ubuntu-latest # 使用ubuntu系统镜像运行自动化脚本
+
+    steps: # 自动化步骤
+      #下载代码仓库
+      - uses: actions/checkout@v1
+
+      # 使用action库，安装node
+      - name: use Node.js # 使用action库  actions/setup-node安装node
         uses: actions/setup-node@v1
         with:
-          node-version: 18.17.0
+          node-version: 18.17.0 # 指定node版本
       # 安装依赖
       - name: npm install
         run: npm install
-      # 打包
-      - name: npm run build
+
+      #打包项目
+      - name: Build
         run: npm run build
-      # 部署到云服务器
-      - name: Deploy to Server # 第二步，rsync推文件
-        uses: AEnterprise/rsync-deploy@v1.0 # 使用别人包装好的步骤镜像
+
+      #部署到服务器
+      - name: Deploy to Staging My server
+        uses: easingthemes/ssh-deploy@v2.1.6
         env:
-          DEPLOY_KEY: ${{ secrets.MY_SERVER_PRIVATE_KEY }} # 引用配置，SSH私钥
-          ARGS: -avz --delete --exclude='*.pyc' # rsync参数，排除.pyc文件
-          SERVER_PORT: "22" # SSH端口
-          FOLDER: ./docs/.vuepress/dist # 要推送的文件夹，路径相对于代码仓库的根目录，视情况替换为自己的文件夹路径
-          SERVER_IP: ${{ secrets.IP }} # 引用配置，服务器的host名（IP或者域名domain.com）
-          USERNAME: root # 引用配置，服务器登录名
-          SERVER_DESTINATION: /root/app # 部署到目标文件夹
+          #私钥
+          SSH_PRIVATE_KEY: ${{ secrets.MY_SERVER_PRIVATE_KEY }}
+          ARGS: "-rltgoDzvO"
+          SOURCE: "docs/.vuepress/dist"
+          REMOTE_HOST: ${{ secrets.IP }} #服务器ip
+          REMOTE_USER: "root"
+          TARGET: "/root/app/"
+          EXCLUDE: "/dist/, /node_modules/"
