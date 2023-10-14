@@ -36,5 +36,5 @@ jobs:
           SOURCE: "docs/.vuepress/dist"
           REMOTE_HOST: ${{ secrets.IP }} #服务器ip
           REMOTE_USER: "root"
-          TARGET: "/root/app/blog-vuepress-vdoing/"
+          TARGET: "/usr/share/nginx/blog/"
           EXCLUDE: "/node_modules/"
