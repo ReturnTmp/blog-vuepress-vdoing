@@ -1,0 +1,3 @@
+.cm-link .cm-underline {
+  pointer-events: none; /* 点击外链直接修改外链名字 点击图标才会跳转 */
+}

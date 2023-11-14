@@ -1,0 +1,11 @@
+{
+  "accentColor": "",
+  "baseFontSize": 14,
+  "translucency": false,
+  "nativeMenus": false,
+  "theme": "system",
+  "cssTheme": "Things",
+  "enabledCssSnippets": [
+    "main"
+  ]
+}
