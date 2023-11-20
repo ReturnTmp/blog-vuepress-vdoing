@@ -3,5 +3,10 @@
   "obsidian-git",
   "obsidian-image-auto-upload-plugin",
   "table-editor-obsidian",
-  "templater-obsidian"
+  "templater-obsidian",
+  "cm-chs-patch",
+  "typewriter-mode",
+  "obsidian-mind-map",
+  "obsidian-pangu",
+  "open-in-new-tab"
 ]

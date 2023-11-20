@@ -4,22 +4,143 @@
     "type": "split",
     "children": [
       {
-        "id": "884fbde365ed32b7",
+        "id": "2862a3e515235396",
         "type": "tabs",
         "children": [
           {
-            "id": "c6e3ae41f7e8e69a",
+            "id": "cf69d31250674635",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "50.随笔摘录/111.Obsidian 安装配置.md",
+                "file": "03.框架工具/43.Spring 服务降级熔断.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a86ad85ad0142a8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03.框架工具/46.Spring Security Token 认证.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d96f729d6b6b5e2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03.框架工具/47.SpringBoot 监控详解.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2abfc67994774ccc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "30.封面/3.封面（1080p）.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5de2a01c765cd47c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "30.封面/1.封面（480p）.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6ceb9d11ec427693",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "95.更多/02.送书/01.嵌入式虚拟化技术与应用.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5612adb83c6c74e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "50.随笔摘录/115.代码生成.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "074548bfebc99ed8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "50.随笔摘录/114.一键改包.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c9a0fcd519268795",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "50.随笔摘录/113.芋道框架学习.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "84b82fcd6e6667d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "50.随笔摘录/112.OAuth2.0 协议解析.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fcf72bb69dae2fb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03.框架工具/43.Spring 服务降级熔断.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -48,7 +169,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Monorepo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "50.随笔摘录/111.Obsidian 安装配置.md"
+                "file": "95.更多/02.送书/01.嵌入式虚拟化技术与应用.md"
               }
             }
           },
@@ -106,7 +227,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "50.随笔摘录/111.Obsidian 安装配置.md",
+                "file": "95.更多/02.送书/01.嵌入式虚拟化技术与应用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,10 +244,18 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "50.随笔摘录/111.Obsidian 安装配置.md",
+                "file": "95.更多/02.送书/01.嵌入式虚拟化技术与应用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
+            }
+          },
+          {
+            "id": "29a70742323eea65",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ]
@@ -147,13 +276,35 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "03e5d43848882429",
+  "active": "6ceb9d11ec427693",
   "lastOpenFiles": [
-    "50.随笔摘录/110.Docker 常用容器部署命令.md",
+    "30.封面/1.封面（480p）.md",
+    "30.封面/3.封面（1080p）.md",
+    "03.框架工具/47.SpringBoot 监控详解.md",
+    "03.框架工具/46.Spring Security Token 认证.md",
+    "50.随笔摘录/112.OAuth2.0 协议解析.md",
+    "03.框架工具/43.Spring 服务降级熔断.md",
+    "50.随笔摘录/115.代码生成.md",
+    "50.随笔摘录/114.一键改包.md",
     "50.随笔摘录/111.Obsidian 安装配置.md",
-    "50.随笔摘录/92.Windows 任务管理器“拒绝访问”.md",
-    "50.随笔摘录/100.雅思备考.md",
-    "50.随笔摘录/0.2023下半年计划.md",
-    "30.CSDN/4.hello.md"
+    "未命名.md",
+    "50.随笔摘录/87.aliyundrive & kodi & Alist 家庭影院搭建指南.md",
+    "50.随笔摘录/113.芋道框架学习.md",
+    "03.框架工具/45.'.vscode' 文件夹.md",
+    "Untitled.md",
+    "03.框架工具/30.语雀故障回顾.md",
+    "03.框架工具/44.Maven BOM 解析.md",
+    "03.框架工具/20.JRebel 使用指南.md",
+    "01.基础课程/11.软件体系架构/2.系统架构演进.md",
+    "03.框架工具/38.IDEA SpringBoot 热部署方式.md",
+    "01.基础课程/11.软件体系架构",
+    "01.基础课程/未命名.md",
+    "00.模板/50.随笔摘录.md",
+    "00.模板/05.人工智能.md",
+    "00.模板/04.运维笔记.md",
+    "00.模板/03.框架工具.md",
+    "00.模板/02.编程语言.md",
+    "00.模板/00.通用模板.md",
+    "00.模板"
   ]
 }

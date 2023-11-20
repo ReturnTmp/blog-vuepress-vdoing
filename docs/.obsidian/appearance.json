@@ -1,11 +1,12 @@
 {
   "accentColor": "",
-  "baseFontSize": 14,
+  "baseFontSize": 16,
   "translucency": false,
   "nativeMenus": false,
   "theme": "system",
-  "cssTheme": "Things",
+  "cssTheme": "Atom",
   "enabledCssSnippets": [
     "main"
-  ]
+  ],
+  "textFontFamily": "霞鹜文楷 GB 屏幕阅读版 R,华文仿宋"
 }
