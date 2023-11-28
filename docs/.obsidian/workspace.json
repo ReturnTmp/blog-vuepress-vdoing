@@ -13,26 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03.框架工具/43.Spring 服务降级熔断.md",
+                "file": "03.框架工具/50.数据库版本控制.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a86ad85ad0142a8c",
+            "id": "cb6b4bffe0f0d586",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03.框架工具/46.Spring Security Token 认证.md",
+                "file": "03.框架工具/49.Netty 入门.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d96f729d6b6b5e2c",
+            "id": "e5cf92470cbcafbb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03.框架工具/48.SPM 埋点.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1b2606212d6b2ad2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03.框架工具/54.优雅提交 Git Commit Message.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2fb4bea5008f9a11",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,91 +68,19 @@
             }
           },
           {
-            "id": "2abfc67994774ccc",
+            "id": "4e64fbbdb46ae71d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30.封面/3.封面（1080p）.md",
+                "file": "03.框架工具/46.Spring Security Token 认证.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5de2a01c765cd47c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "30.封面/1.封面（480p）.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6ceb9d11ec427693",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "95.更多/02.送书/01.嵌入式虚拟化技术与应用.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5612adb83c6c74e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "50.随笔摘录/115.代码生成.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "074548bfebc99ed8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "50.随笔摘录/114.一键改包.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c9a0fcd519268795",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "50.随笔摘录/113.芋道框架学习.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "84b82fcd6e6667d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "50.随笔摘录/112.OAuth2.0 协议解析.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fcf72bb69dae2fb9",
+            "id": "6dbbb0793fe67ffd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -140,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -206,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "95.更多/02.送书/01.嵌入式虚拟化技术与应用.md"
+                "file": "03.框架工具/54.优雅提交 Git Commit Message.md"
               }
             }
           },
@@ -227,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "95.更多/02.送书/01.嵌入式虚拟化技术与应用.md",
+                "file": "03.框架工具/54.优雅提交 Git Commit Message.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -244,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "95.更多/02.送书/01.嵌入式虚拟化技术与应用.md",
+                "file": "03.框架工具/54.优雅提交 Git Commit Message.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -276,35 +228,35 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6ceb9d11ec427693",
+  "active": "1b2606212d6b2ad2",
   "lastOpenFiles": [
-    "30.封面/1.封面（480p）.md",
-    "30.封面/3.封面（1080p）.md",
+    "03.框架工具/52.MP 配置分页.md",
+    "03.框架工具/54.优雅提交 Git Commit Message.md",
+    "03.框架工具/48.SPM 埋点.md",
     "03.框架工具/47.SpringBoot 监控详解.md",
     "03.框架工具/46.Spring Security Token 认证.md",
-    "50.随笔摘录/112.OAuth2.0 协议解析.md",
     "03.框架工具/43.Spring 服务降级熔断.md",
-    "50.随笔摘录/115.代码生成.md",
-    "50.随笔摘录/114.一键改包.md",
-    "50.随笔摘录/111.Obsidian 安装配置.md",
-    "未命名.md",
-    "50.随笔摘录/87.aliyundrive & kodi & Alist 家庭影院搭建指南.md",
+    "03.框架工具/42.seleuim 指南.md",
+    "50.随笔摘录/112.OAuth2.0 协议解析.md",
+    "04.运维笔记/91.Docker 快速搭建 MySQL 高可用集群.md",
+    "04.运维笔记/90.KVM Anolis OS 环境搭建.md",
+    "04.运维笔记/85.Linux 补丁指南.md",
+    "04.运维笔记/92.RabbitMQ 入门指南（安装，配置，应用）.md",
     "50.随笔摘录/113.芋道框架学习.md",
-    "03.框架工具/45.'.vscode' 文件夹.md",
-    "Untitled.md",
-    "03.框架工具/30.语雀故障回顾.md",
+    "50.随笔摘录/114.一键改包.md",
+    "50.随笔摘录/115.代码生成（包含前端和后端）.md",
+    "50.随笔摘录/116.MP 代码生成.md",
+    "50.随笔摘录/117.IDEA 格式化问题.md",
+    "03.框架工具/41.Nacos 教程.md",
     "03.框架工具/44.Maven BOM 解析.md",
-    "03.框架工具/20.JRebel 使用指南.md",
-    "01.基础课程/11.软件体系架构/2.系统架构演进.md",
-    "03.框架工具/38.IDEA SpringBoot 热部署方式.md",
+    "03.框架工具/45.'.vscode' 文件夹.md",
+    "03.框架工具/49.Netty 入门.md",
+    "03.框架工具/50.数据库版本控制.md",
+    "03.框架工具/51.Swagger 2 和 3 区别.md",
+    "03.框架工具/53.MySQL 分库分表.md",
+    "04.运维笔记/75.pnpm 使用指南.md",
+    "04.运维笔记/76.Nginx 403 forbidden 问题.md",
     "01.基础课程/11.软件体系架构",
-    "01.基础课程/未命名.md",
-    "00.模板/50.随笔摘录.md",
-    "00.模板/05.人工智能.md",
-    "00.模板/04.运维笔记.md",
-    "00.模板/03.框架工具.md",
-    "00.模板/02.编程语言.md",
-    "00.模板/00.通用模板.md",
     "00.模板"
   ]
 }
