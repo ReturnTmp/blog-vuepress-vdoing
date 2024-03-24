@@ -4,167 +4,107 @@
     "type": "split",
     "children": [
       {
-        "id": "2862a3e515235396",
+        "id": "44d56a7f11682088",
         "type": "tabs",
         "children": [
           {
-            "id": "4cff5b4e005dc6a3",
+            "id": "2cbdc4eb8e71779e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "50.随笔摘录/123.力扣刷题笔记.md",
+                "file": "50.随笔摘录/02.刷题/123.力扣刷题笔记.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ad6c974fd3289ae9",
+            "id": "c015d8f3dd549059",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "50.随笔摘录/120.Python 刷题指南.md",
+                "file": "50.随笔摘录/02.刷题/120.Python 刷题指南.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "30c2223541d73e3a",
+            "id": "e8b120f03ca2efbd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01.基础课程/11.软件体系架构/2.系统架构演进.md",
+                "file": "04.运维笔记/104.Zookeeper Windows 安装配置（单机 - 集群）.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c32d9cdf954dd317",
+            "id": "a1688c556138a3b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03.框架工具/67.Sentinel 流量治理组件入门教程.md",
+                "file": "50.随笔摘录/114.一键改包.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c2f32142e48d9853",
+            "id": "4492aafe4f647c7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01.基础课程/11.软件体系架构/5.大型网站技术架构.md",
+                "file": "03.框架工具/76.社区项目 forest 修改.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5b168bb2eef1c679",
+            "id": "8ae288311ec0a2ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04.运维笔记/92.RabbitMQ 入门指南（安装，配置，应用）.md",
+                "file": "03.框架工具/78.新版 PyCharm 设置 Conda 虚拟环境.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a83721408225953c",
+            "id": "9721e24803ba238c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04.运维笔记/101.运维监控系统.md",
+                "file": "50.随笔摘录/132.腾讯云域名转到阿里云.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5ae909fbc35b9676",
+            "id": "b70a2333aa4858b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04.运维笔记/100.前端监控搭建.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "55059373c296ec0f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04.运维笔记/93.linux JDK8 环境配置.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4fe126ba674267d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03.框架工具/41.Nacos 教程.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dd7d3b39fba541df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03.框架工具/72.Netty IM 系统.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f520be8411877ea0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04.运维笔记/95.Spring Cloud Gateway + Nacos 灰度发布.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1e4f2797662a5c93",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04.运维笔记/97.nginx 负载均衡节点健康检查.md",
+                "file": "03.框架工具/77.Maven 项目命名规范.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -193,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Monorepo",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -230,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04.运维笔记/101.运维监控系统.md"
+                "file": "03.框架工具/77.Maven 项目命名规范.md"
               }
             }
           },
@@ -246,12 +186,12 @@
             }
           },
           {
-            "id": "a1fa83c1312e60ef",
+            "id": "029a0dee702a7c2e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04.运维笔记/101.运维监控系统.md",
+                "file": "03.框架工具/77.Maven 项目命名规范.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -263,19 +203,26 @@
             }
           },
           {
-            "id": "11060af90d4f7f0e",
+            "id": "0f83d41966a7489c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04.运维笔记/101.运维监控系统.md",
+                "file": "03.框架工具/77.Maven 项目命名规范.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "e3befe276fc172cf",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -283,50 +230,53 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": true,
       "daily-notes:打开/创建今天的日记": true,
       "templates:插入模板": true,
-      "command-palette:打开命令面板": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "a83721408225953c",
+  "active": "b70a2333aa4858b6",
   "lastOpenFiles": [
-    "04.运维笔记/97.nginx 负载均衡节点健康检查.md",
-    "04.运维笔记/100.前端监控搭建.md",
-    "04.运维笔记/101.运维监控系统.md",
-    "04.运维笔记/91.Docker 快速搭建 MySQL 高可用集群.md",
-    "04.运维笔记/92.RabbitMQ 入门指南（安装，配置，应用）.md",
-    "04.运维笔记/93.linux JDK8 环境配置.md",
-    "04.运维笔记/94.发布策略.md",
-    "04.运维笔记/95.Spring Cloud Gateway + Nacos 灰度发布.md",
-    "04.运维笔记/96.灰度发布.md",
-    "03.框架工具/72.Netty IM 系统.md",
-    "03.框架工具/8.K8s/64.K8s 入门指南（一）：单节点集群环境搭建.md",
-    "04.运维笔记/未命名",
-    "03.框架工具/41.Nacos 教程.md",
-    "03.框架工具/50.数据库版本管理.md",
-    "03.框架工具/67.Sentinel 流量治理组件入门教程.md",
-    "03.框架工具/65.SpringCloud 微服务实战.md",
-    "03.框架工具/47.SpringBoot 监控详解.md",
+    "50.随笔摘录/133.百度网盘加速.md",
+    "50.随笔摘录/02.刷题/123.力扣刷题笔记.md",
+    "03.框架工具/75.Maven 依赖包冲突问题解决.md",
+    "03.框架工具/78.新版 PyCharm 设置 Conda 虚拟环境.md",
+    "03.框架工具/未命名.md",
+    "03.框架工具/76.社区项目 forest 修改.md",
+    "50.随笔摘录/132.腾讯云域名转到阿里云.md",
+    "50.随笔摘录/114.一键改包.md",
+    "03.框架工具/77.Maven 项目命名规范.md",
     "03.框架工具/54.Git Commit Message.md",
-    "03.框架工具/8.K8s/65.K8s 入门指南（二）：单节点集群环境搭建（ubuntu）.md",
-    "01.基础课程/11.软件体系架构/2.系统架构演进.md",
-    "01.基础课程/11.软件体系架构/5.大型网站技术架构.md",
-    "03.框架工具/71.JMeter 压测.md",
-    "03.框架工具/8.K8s/66.K8s 入门指南（二）：实战概念讲解.md",
-    "03.框架工具/62.Spring 跨域配置.md",
-    "03.框架工具/43.Spring 服务降级熔断.md",
-    "03.框架工具/36.Swagger 导出 API 文档.md",
-    "03.框架工具/51.Swagger 2 和 3 区别.md",
+    "50.随笔摘录/131.开源项目疑问.md",
+    "04.运维笔记/104.Zookeeper Windows 安装配置（单机 - 集群）.md",
+    "50.随笔摘录/02.刷题/120.Python 刷题指南.md",
+    "03.框架工具/74.SpringBoot 邮件服务 集成配置 详解.md",
+    "50.随笔摘录/130.Druid mysql 连接失败问题.md",
+    "50.随笔摘录/02.刷题/124.周赛汇总.md",
+    "50.随笔摘录/01.书评/10. 时间管理汇总（彼得·德鲁克）.md",
+    "50.随笔摘录/01.书评/30.《人月神话》汇总精要.md",
+    "50.随笔摘录/04.Win/72.设置 Win11 文件默认打开方式.md",
+    "50.随笔摘录/04.Win/92.Windows 任务管理器“拒绝访问”.md",
+    "50.随笔摘录/04.Win/130.Windows Terminal配置（浅色）.md",
+    "50.随笔摘录/126.右键删除或新增 Open Folder as Intellij IDEA Project.md",
+    "50.随笔摘录/113.芋道框架学习.md",
+    "50.随笔摘录/92.Windows 任务管理器“拒绝访问”.md",
+    "50.随笔摘录/90.Writerside 抢鲜体验评测.md",
+    "50.随笔摘录/85.主机游戏模拟器.md",
+    "50.随笔摘录/05.浏览器",
+    "50.随笔摘录/04.Win",
+    "50.随笔摘录/03.科研",
+    "50.随笔摘录/02.刷题",
+    "50.随笔摘录/01.书评",
+    "04.运维笔记/未命名",
     "03.框架工具/10.Git",
     "03.框架工具/8.K8s",
     "03.框架工具/10.Vue",
-    "03.框架工具/01.SpringBoot",
-    "01.基础课程/11.软件体系架构",
-    "00.模板"
+    "03.框架工具/01.SpringBoot"
   ]
 }

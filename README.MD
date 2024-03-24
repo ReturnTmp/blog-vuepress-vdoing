@@ -1,3 +1,5 @@
+> 博客主题仓库：[xugaoyi/vuepress-theme-vdoing](https://github.com/xugaoyi/vuepress-theme-vdoing)
+
 
 
 ## 📚 博客
